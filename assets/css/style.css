@@ -42,7 +42,7 @@ html {
 
 .navbar-toggler-icon {
     background-color: #333;
-    display: flex !important;
+    display: flex;
     flex-basis: auto;
     justify-content: flex-end;
     align-content: stretch;
