@@ -35,26 +35,19 @@ html {
 /* logo and title*/
 #logo {
     float: left;
-    font-size: 200%;
+    font-size: 24px;
     margin-left: 30px;
     color: #4c895a;
 }
 
 .navbar-toggler-icon {
     background-color: #333;
-    display: flex;
-    flex-basis: auto;
-    justify-content: flex-end;
-    align-content: stretch;
 }
 
-.navbar-toggler-icon {
-    background-color: #333;
-}
 
 #menu.navbar-nav {
-    margin: 12px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     list-style: none;
 
 
@@ -62,6 +55,7 @@ html {
 
 #menu li {
     display: inline-block;
+    margin-right: 15px;
 }
 
 #menu li:last-child {
@@ -77,4 +71,469 @@ html {
 
 #menu a:hover {
     color: #007bff;
+}
+
+/* Mobile Styles */
+@media (max-width: 992px) {
+    .navbar-toggler-icon {
+        background-color: rgba(233, 238, 245, 0.998);
+    }
+
+    #menu.navbar-nav {
+        text-align: center;
+        display: inline-block;
+    }
+
+    #menu.active {
+        display: block;
+        border-bottom: 1px solid #4c895a;
+    }
+
+    #menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-nav.show {
+        display: flex;
+        display: inline-block;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        left: auto;
+        z-index: 100;
+        border: 1px solid #ccc;
+        position: absolute;
+        float: none;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 25px;
+        text-align: left;
+    }
+
+    #menu a {
+        color: #333;
+        font-weight: normal;
+    }
+
+    #menu a:hover {
+        color: #007bff;
+    }
+}
+
+/* Larger Screens */
+@media (min-width: 992px) {
+    .navbar-expand-md .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    #menu a:link {
+        text-decoration: none;
+    }
+
+    #menu.navbar-nav {
+        text-align: right;
+    }
+
+    #menu a:visited {
+        text-decoration: none;
+    }
+
+    #menu a:hover {
+        border-bottom: 1px solid #4c895a;
+    }
+
+    a {
+        color: #4c895a;
+    }
+
+    a:active {
+        font-weight: bold;
+    }
+
+    #menu {
+        font-size: 110%;
+        font-family: barlow;
+        font-weight: 600;
+        list-style-type: none;
+        letter-spacing: 4px;
+        float: right;
+        color: #4c895a;
+    }
+
+    #menu li {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+}
+
+/* hero image and text*/
+
+#hero-image {
+    height: 500px;
+    width: 100%;
+    background: url("../images/green-plant-p-1080.png") no-repeat center center;
+    background-size: cover;
+    opacity: 1;
+    animation-name: hero-zoom;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+#hero-outer {
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    position: relative
+}
+
+/* fade-in css code for the hero image */
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Barlow;
+    font-weight: 900;
+    text-transform: none;
+    letter-spacing: 2px;
+    width: 280px;
+    height: 200px;
+    padding-top: 20px;
+    padding-left: 10px;
+    background-color: #4c895a66;
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    border-bottom-left-radius: 15px;
+
+}
+
+#cover-text h3 {
+    color: #ece3e3;
+
+}
+
+.card-body {
+    min-height: 175px;
+}
+
+.card-image-top {
+    text-align: center;
+    object-fit: cover;
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+hr {
+    border-top: 1px solid #4c895a;
+    width: 100%;
+    margin: 5px
+}
+
+.why-us {
+    text-align: center;
+    padding: 20px 10px;
+    color: #4c895a;
+    font-size: large;
+    font-family: barlow;
+    margin-bottom: 50px;
+}
+
+#why-us p {
+    font-size: medium;
+}
+
+#why-us-header {
+    padding: 20px 20px;
+    color: #4c895a;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.left-about-heading {
+    width: 100%;
+    line-height: 25px;
+    clear: both;
+    margin-bottom: 50px;
+    text-align: start;
+
+}
+
+.right-about-heading {
+    width: 100%;
+    line-height: 25px;
+    clear: both;
+    margin-bottom: 50px;
+    text-align: start;
+
+
+
+}
+
+#right-about {
+    margin-bottom: 50px;
+}
+
+#services div {
+    width: 100%;
+    clear: both;
+    height: 150px;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #fff;
+}
+
+footer {
+    background-color: #67bc7b6b;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 200%;
+    margin: 1%;
+    padding: 0;
+    color: #fff;
+}
+
+.table {
+    table-layout: auto;
+    width: 75%;
+}
+
+/*styles the service page*/
+
+.services {
+    margin: 50px 25px;
+}
+
+#caption {
+    display: table-caption;
+    caption-side: top;
+    font-size: large;
+    font-weight: 400;
+}
+
+.service-header {
+    margin: auto;
+    padding: 25px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 900px;
+}
+
+.services-table {
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 150px;
+}
+
+.servicelist {
+    margin-bottom: auto;
+    padding-bottom: 150px;
+    text-align: left;
+}
+
+.table {
+    table-layout: auto;
+    font-size: medium;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+td a {
+    font-size: medium;
+}
+
+#services {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* styling the book now page*/
+
+#booknow {
+    margin-bottom: 150px;
+
+}
+
+#book-now-section {
+    margin-bottom: 150px;
+    margin-left: 10px;
+}
+
+#booknowheader {
+    text-align: left;
+}
+
+form {
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+form label {
+    text-align: left;
+}
+
+input {
+    width: 66%;
+    padding: 10px;
+    border: 2px solid #4c895a;
+    border-radius: 4px;
+    max-width: 75%;
+    min-width: 310px;
+}
+
+input:focus {
+    border: 3px solid #d9ff00;
+}
+
+select {
+    width: 66%;
+    padding: 10px;
+    border: 2px solid #4c895a;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    max-width: 75%;
+    min-width: 310px;
+}
+
+.button {
+    background-color: #4c895a;
+    border: none;
+    color: #ffffff;
+    padding: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0.3125rem 0.625rem #888888;
+    margin-top: 1.875rem;
+}
+
+/* styling the contact page */
+
+#map {
+    margin-bottom: 25px;
+}
+
+.map {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+
+}
+
+.contact-us {
+    text-align: center;
+    padding: 20px 10px;
+    color: #4c895a;
+    font-size: large;
+    font-family: barlow;
+    margin-bottom: 15px;
+}
+
+.contact {
+    margin-bottom: 100px;
+    padding-bottom: 0px;
+}
+
+#contact-us-header {
+    padding: 20px 20px;
+    color: #4c895a;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#location-icon {
+    text-align: center;
+    color: #4c895a;
+    font-size: large;
+    font-family: barlow;
+}
+
+#contact-types {
+    padding-bottom: 50px;
+}
+
+.phone {
+    width: 100%;
+    line-height: 25px;
+    clear: both;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.email {
+    width: 100%;
+    line-height: 25px;
+    clear: both;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.coffee {
+    width: 100%;
+    line-height: 25px;
+    clear: both;
+    text-align: center;
 }
