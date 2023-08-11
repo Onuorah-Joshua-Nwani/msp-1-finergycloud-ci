@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat&family=Roboto&display=swap');
+
+body {
+    font-family: Barlow;
+    max-width: 1920px;
+    margin: auto;
+}
+
+h1 {
+    font-weight: 800;
+    color: #4c895a
+}
+
+h2 {
+    font-weight: 600;
+    color: #4c895a
+}
+
+h3 {
+    font-weight: 400;
+    color: #4c895a
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+/* logo and title*/
+#logo {
+    float: left;
+    font-size: 200%;
+    margin-left: 30px;
+    color: #4c895a;
+}
+
+.navbar-toggler-icon {
+    background-color: #333;
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+    align-content: stretch;
+}
+
+.navbar-toggler-icon {
+    background-color: #333;
+}
+
+#menu.navbar-nav {
+    margin: 12px;
+    padding: 0px;
+    list-style: none;
+
+
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu li:last-child {
+    margin-right: 0;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #4c895a;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#menu a:hover {
+    color: #007bff;
+}
